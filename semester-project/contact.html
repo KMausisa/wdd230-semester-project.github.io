@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page will display the normal contact information, location of the chamber, and the board of directors"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon_io/favicon-32x32.png"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script type="module" src="js/responsive-navigation.js"></script>
+    <script src="js/last-modified.js" defer></script>
+
+    <title>Contact Info | Bay Chamber</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <img
+            srcset="
+              images/favicon/favicon_io/favicon-32x32.png        16w,
+              images/favicon/favicon_io/android-chrome-96x96.png 96w
+            "
+            sizes="(max-width: 400px) 96px, 
+                          32px"
+            src="images/favicon/favicon_io/favicon-16x16.png"
+            alt="Site Logo"
+          />
+        </li>
+        <li><a class="menu-button" href="#">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <figure class="container">
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="
+              images/hero-images/contact-page/contact-banner-image-523x620.png
+            "
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="
+              images/hero-images/contact-page/contact-banner-image-1536x620.png
+            "
+          />
+          <img
+            src="images/hero-images/contact-page/contact-banner-image-1536x620.png"
+            alt="Banner Image"
+          />
+        </picture>
+        <div class="top-left">
+          <h1>Bay Chamber</h1>
+          <section class="call-to-action">
+            <h2>Contact Information</h2>
+          </section>
+        </div>
+      </figure>
+    </header>
+    <main class="contact">
+      <div class="section-1">
+        <section class="google-map">
+          <div>
+            <h2>Location</h2>
+            <p>235 Montgomery Street Suite 760 San Francisco, CA 94104</p>
+          </div>
+          <iframe
+            id="small"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.645475460312!2d-122.40313693687223!3d37.79134971489873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858089f4ef08cd%3A0xf54b27602fe6df69!2sSan%20Francisco%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1626816823856!5m2!1sen!2sus"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </section>
+        <section class="contact">
+          <div>
+            <h2>Location</h2>
+            <p>235 Montgomery Street Suite 760 San Francisco, CA 94104</p>
+          </div>
+          <div>
+            <h2>Phone</h2>
+            <p>415.392.4520</p>
+          </div>
+          <div>
+            <h2>Email</h2>
+            <p>info@baychamber.com</p>
+          </div>
+        </section>
+      </div>
+      <section class="board">
+        <h2>Board of Directors</h2>
+        <div class="board1">
+          <h3>Chair</h3>
+          <img
+            src="images/contact/board-directors/board-image-1.jfif"
+            alt="Melinda Yee Franklin"
+          />
+          <h3>Melinda Yee Franklin</h3>
+          <p>
+            West Region Executive,<br />Community Engagement<br />Corporate
+            Responsibility<br />
+            JPMorgan Chase & Co.
+          </p>
+        </div>
+        <div class="board2">
+          <h3>Vice Chair</h3>
+          <img
+            src="images/contact/board-directors/board-image-2.jpeg"
+            alt="Scott Dunlap"
+          />
+          <h3>Scott Dunlap</h3>
+          <p>Managing Principal<br />Gensler</p>
+        </div>
+        <div class="board3">
+          <h3>Past Immediate Chair</h3>
+          <img
+            src="images/contact/board-directors/board-image-3.jpg"
+            alt="John Gingrich"
+          />
+          <h3>John Gingrich</h3>
+          <p>
+            Northern California Office,<br />Managing Director<br />Accenture
+          </p>
+        </div>
+        <div class="board4">
+          <h3>President & CEO</h3>
+          <img
+            src="images/contact/board-directors/board-image-4.jfif"
+            alt="Rodney Fong"
+          />
+          <h3>Rodney Fong</h3>
+          <p>President & CEO<br />San Francisco Chamber of<br />Commerce</p>
+        </div>
+      </section>
+      <section class="form">
+        <form action="thanks-contact.html">
+          <fieldset>
+            <legend>Contact Us</legend>
+            <label class="top"
+              >First Name* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last Name* <input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              >Phone <input type="tel" name="phone" placeholder="1235551234"
+            /></label>
+            <textarea name="story" id="story" cols="50" rows="10"></textarea>
+          </fieldset>
+          <input type="submit" value="Send Message" class="submitBtn" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="attribution">
+        <img src="images/favicon/favicon_io/android-chrome-96x96.png" alt="">
+        <h2>Bay Chamber</h2>
+        <p>
+          <a href="https://sfchamber.com/about/board-of-directors/"
+            >More</a
+          >
+          on Board of Directors
+        </p>
+      </section>
+      <div>
+        <section class="social-links">
+          <a href="https://www.instagram.com">
+            <img
+              src="images/social/instagram/instagram-icon-1.png"
+              alt="Instagram Image"
+            />
+          </a>
+          <a href="https://www.twitter.com">
+            <img
+              src="images/social/twitter/twitter-icon.png"
+              alt="Twitter Image"
+            />
+          </a>
+          <a href="https://www.facebook.com">
+            <img
+              src="images/social/facebook/facebook-icon.png"
+              alt="Facebook Image"
+            />
+          </a>
+        </section>
+        <section class="contact-info">
+          <p>235 Montgomery Street Suite 760</p>
+          <p>San Francisco, CA 94104</p>
+          <p>Phone: <strong>415.392.4520</strong></p>
+          <p>Email: <strong>info@baychamber.com</strong></p>
+          <p>Last modified: <span id="last-mod"></span></p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

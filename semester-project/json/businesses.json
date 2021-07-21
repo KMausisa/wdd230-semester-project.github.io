@@ -1,0 +1,82 @@
+{
+    "businesses": [
+
+        {
+            "name": "Pirate Supply Store",
+            "locations": [
+                "Mission Center: 826 Valencia Street San Francisco, CA 94110",
+                "Tenderloin Center: 180 Golden Gate Avenue San Francisco, CA 94102",
+                "Mission Bay Center: 1310 Fourth Street San Francisco, CA 94158"
+            ],
+            "phone": [
+                "Mission Center: (415) 642-5905 x 201",
+                "Tenderloin Center: (415) 642-5905 x 205",
+                "Mission Bay Center: (415) 642-5905 x 245"
+            ],
+            "website": "https://shop.826valencia.org/",
+            "logo": "images/directory/business-1/logo.jpg"
+        },
+        
+        {
+            "name": "Bacon Bacon",
+            "locations": [
+                "Bacon Bacon Cafe 205A Frederick Street San Francisco, CA 94117",
+                "Bacon Bacon – Lafayette 3455 Mt. Diablo Blvd Lafayette CA 94549"
+            ],
+            "phone": "San Francisco: (415) 218-4347",
+            "website": "https://www.baconbaconsf.com/",
+            "logo": "images/directory/business-2/logo.png"
+        },
+
+        {
+            "name": "Canyon Market",
+            "location": "2815 Diamond Street San Francisco, CA 94131",
+            "phone": "(415) 586-9999",
+            "website": "http://canyonmarket.com/",
+            "logo": "images/directory/business-3/logo.png"
+        },
+
+        {
+            "name": "Cat Town Cafe",
+            "location": "2869 Broadway Oakland, CA 94611",
+            "phone": "(510) 866-4607",
+            "email": [
+                "Foster and Adoption Inquiries: info@cattownoakland.org",
+                "Media Inquiries: quinn@cattownoakland.org"
+            ],
+            "website": "https://www.cattownoakland.org/",
+            "logo": "images/directory/business-4/logo.png"
+        },
+
+        {
+            "name": "Garden Creamery",
+            "location": "3566 20th Street San Francisco, CA 94110",
+            "website": "https://gardencreamery.com/home/",
+            "logo": "images/directory/business-5/logo.png"
+        },
+
+        {
+            "name": "Cafe Josephine",
+            "location": "199 Museum Way San Francisco, CA 94114",
+            "phone": "(415) 350-8976",
+            "website": "https://www.satchelcafe.com/",
+            "logo": "images/directory/business-6/logo.jpg"
+        },
+
+        {
+            "name": "Mollusk Surf Shop",
+            "locations": [
+                "San Francisco: 4500 Irving Street San Francisco, CA 94122-1132",
+                "Venice: 1600 Pacific Avenue Venice Beach, CA 90291-9998",
+                "Santa Barbara: 208 Gray Ave Santa Barbara, CA 93101"
+            ],
+            "phone": [
+                "San Francisco: (415) 564-6300",
+                "Venice: (310) 396-1969",
+                "Santa Barbara: (805) 568-0908"
+            ],
+            "website": "https://mollusksurfshop.com/",
+            "logo": "images/directory/business-7/logo.PNG"
+        }
+    ]
+}

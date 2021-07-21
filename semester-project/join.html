@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page will hold a form for users to submit a chamber membership application form."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon_io/favicon-32x32.png"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script type="module" src="js/responsive-navigation.js"></script>
+    <script src="js/last-modified.js" defer></script>
+
+    <title>Join Form | Bay Chamber</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <img
+            srcset="
+              images/favicon/favicon_io/favicon-32x32.png        16w,
+              images/favicon/favicon_io/android-chrome-96x96.png 96w
+            "
+            sizes="(max-width: 400px) 96px, 
+                          32px"
+            src="images/favicon/favicon_io/favicon-16x16.png"
+            alt="Site Logo"
+          />
+        </li>
+        <li><a class="menu-button" href="#">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a class="active" href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <figure class="container">
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="images/hero-images/join-page/join-banner-image-604x766.png"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="images/hero-images/join-page/join-banner-image-1526x800.png"
+          />
+          <img
+            src="images/hero-images/join-page/join-banner-image-1526x800.png"
+            alt="Banner Image"
+          />
+        </picture>
+        <div class="top-left">
+          <h1>Bay Chamber</h1>
+          <section class="call-to-action">
+            <h2>Chamber Membership Application</h2>
+          </section>
+        </div>
+      </figure>
+    </header>
+    <main class="join">
+      <form action="thanks.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label class="top" for="fname"
+            >First Name* <input type="text" id="fname" name="fname" required
+          /></label>
+          <label class="top" for="lname"
+            >Last Name* <input type="text" id="lname" name="lname" required
+          /></label>
+          <label class="top" for="title">Title <input type="text" id="title" name="title" /></label>
+          <label class="top" for="email"
+            >Email*
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label class="top" for="phone"
+            >Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"
+          /></label>
+          <label class="top" for="website"
+            >Website <input type="url" id="website" name="fname" placeholder="http://"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Business Information</legend>
+          <label class="top" for="bus-name"
+            >Business Name* <input type="text" id="bus-name" name="bus-name" required
+          /></label>
+          <label class="top" for="bus-add"
+            >Business Address <input type="text" id="bus-add" name="bus-address"
+          /></label>
+          <label class="top" for="bus-website"
+            >Business URL
+            <input type="url" id="bus-website" name="bus-website" placeholder="http://"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Membership Options (Annual Subscriptions)</legend>
+          <label class="top"
+            >Membership Tier
+            <select name="subject">
+              <option value=" ">Please Select</option>
+              <option value="non-profit">Non-profit</option>
+              <option value="bronze">Bronze</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+          </label>
+          <section>
+            <p>Non-Profit ($100): Discounts on your businesses essentials</p>
+            <p>
+              Bronze ($200): High Level Business Training with access to all
+              resources for training.
+            </p>
+            <p>
+              Silver ($400): Make monthly business contracts that gives the
+              opportunity to network and connect with other local
+              businesses.Your business will be listed on the chamber newsletter
+              and online directory
+            </p>
+            <p>
+              Gold ($1000): Combining three prevoius tiers and includes free
+              access to city events, including free advertisements and pop-up
+              shop exclusives
+            </p>
+          </section>
+        </fieldset>
+
+        <input type=" submit" value="Become a Member" class="submitBtn" />
+      </form>
+    </main>
+    <footer>
+      <section class="attribution">
+        <img src="images/favicon/favicon_io/android-chrome-96x96.png" alt="">
+        <h2>Bay Chamber</h2>
+      </section>
+      <div>
+        <section class="social-links">
+          <a href="https://www.instagram.com">
+            <img
+              src="images/social/instagram/instagram-icon-1.png"
+              alt="Instagram Image"
+            />
+          </a>
+          <a href="https://www.twitter.com">
+            <img
+              src="images/social/twitter/twitter-icon.png"
+              alt="Twitter Image"
+            />
+          </a>
+          <a href="https://www.facebook.com">
+            <img
+              src="images/social/facebook/facebook-icon.png"
+              alt="Facebook Image"
+            />
+          </a>
+        </section>
+        <section class="contact-info">
+          <p>235 Montgomery Street Suite 760</p>
+          <p>San Francisco, CA 94104</p>
+          <p>Phone: <strong>415.392.4520</strong></p>
+          <p>Email: <strong>info@baychamber.com</strong></p>
+          <p>Last modified: <span id="last-mod"></span></p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

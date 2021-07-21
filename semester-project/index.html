@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the home page for San Francisco's Chamber of Commerce."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon_io/favicon-32x32.png"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script type="module" src="js/responsive-navigation.js"></script>
+    <script type="module" src="js/current-forecast.js"></script>
+    <script type="module" src="js/three-day-forecast.js"></script>
+    <script src="js/last-modified.js" defer></script>
+
+    <title>Home | Bay Chamber</title>
+  </head>
+  <body>
+    <aside id="weather-alert" style="display: none"></aside>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <img
+            srcset="
+              images/favicon/favicon_io/favicon-32x32.png        16w,
+              images/favicon/favicon_io/android-chrome-96x96.png 96w
+            "
+            sizes="(max-width: 400px) 96px, 
+                        32px"
+            src="images/favicon/favicon_io/favicon-16x16.png"
+            alt="Site Logo"
+          />
+        </li>
+        <li><a class="menu-button" href="#">&#9776; Menu</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <figure class="container">
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="images/hero-images/home-page/hero-image-643x738.png"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="images/hero-images/home-page/hero-image-1536x848.png"
+          />
+          <img
+            src="images/hero-images/home-page/hero-image-1536x848.png"
+            alt="Banner Image"
+          />
+        </picture>
+        <div class="top-left">
+          <h1>Bay Chamber</h1>
+          <section class="call-to-action">
+            <h2>Join your community</h2>
+            <button
+              class="join"
+              type="button"
+              onclick="document.location='join.html'"
+            >
+              Become a Chamber Member!
+            </button>
+          </section>
+        </div>
+      </figure>
+    </header>
+    <main>
+      <section class="local-businesses">
+        <h2 class="section-h2">Local Businnesses in the Bay</h2>
+        <div>
+          <article class="business1">
+            <figure>
+              <img
+                src="images/local-businesses/business-1/chocolate-covered-375x500.png"
+                alt="Business-1 Image"
+              />
+              <figcaption class="business-h2">Chocolate Covered</figcaption>
+            </figure>
+          </article>
+          <article class="business2">
+            <figure>
+              <img
+                src="images/local-businesses/business-2/print-center-375x500.png"
+                alt="Business-1 Image"
+              />
+              <figcaption class="business-h2">
+                City Copy & Print Center
+              </figcaption>
+            </figure>
+          </article>
+          <article class="business3">
+            <figure>
+              <img
+                src="images/local-businesses/business-3/diju-jewlery-375x500.png"
+                alt="Business-1 Image"
+              />
+              <figcaption class="business-h2">Diju Jewelery</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="purpose">
+        <h2>Chamber Purpose and Goals</h2>
+        <p>
+          As small local business continues to face trials during the pandemic,
+          the city is here to support each and every one of them. This website
+          is to raise additional awareness by hosting events that will involve
+          the community, which will increase the exposure of these businesses.
+          Overall, bringing the community together through activities and
+          volunteer opportunities will foster and safe loving bond between
+          friends and family.
+        </p>
+      </section>
+
+      <section class="events">
+        <h2>Upcoming events</h2>
+        <hr />
+        <div class="event1">
+          <h3>Stern Grove Festival (Food Truck) - Senior Sisig</h3>
+          <h4>Details</h4>
+          <p>Sun, Jul 18, 7:00 PM - Mon, Jul 19, 12:30AM</p>
+          <p>Stern Grove Entry Rd, San Francisco, CA</p>
+        </div>
+        <hr />
+        <div class="event2">
+          <h3>Nature Painting: Joy and Comfort</h3>
+          <h4>Details</h4>
+          <p>Aug 8, 1PM - Aug 26, 6PM</p>
+          <p>Golden Gate Park, San Francisco, CA</p>
+        </div>
+      </section>
+
+      <section class="weather">
+        <img
+          class="weather-banner"
+          src="images/weather-banner/weather-banner-1536x1024.png"
+          alt="Golden Gate Bridge"
+        />
+        <section class="current-forecast">
+          <h2>Current Weather Report</h2>
+          <div>
+            <p>Currently:</p>
+            <img
+              id="icon"
+              src="#"
+              alt="Image displaying weather pattern of the day."
+            />
+            <p id="currentTemp"></p>
+            <p>High: <span id="highTemp"></span>&deg; F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+          </div>
+        </section>
+
+        <section class="forecast">
+          <h2>Three Day Forecast</h2>
+          <p class="description">
+            High Temperature Forecasts at 12pm of each day going forward.
+          </p>
+          <div>
+            <p class="one">
+              <span id="dayOfWeek1"></span>
+              <img
+                id="icon1"
+                src="#"
+                alt="Image displaying weather pattern of the day."
+              />
+              <span id="forecast1"></span>&deg; F
+            </p>
+            <p class="two">
+              <span id="dayOfWeek2"></span>
+              <img
+                id="icon2"
+                src="#"
+                alt="Image displaying weather pattern of the day."
+              />
+              <span id="forecast2"></span>&deg; F
+            </p>
+            <p class="three">
+              <span id="dayOfWeek3"></span>
+              <img
+                id="icon3"
+                src="#"
+                alt="Image displaying weather pattern of the day."
+              />
+              <span id="forecast3"></span>&deg; F
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="attribution">
+        <img src="images/favicon/favicon_io/android-chrome-96x96.png" alt="">
+        <h2>Bay Chamber</h2>
+        <p>
+          <a href="https://www.eventbrite.com/d/ca--san-francisco/events/"
+            >More</a
+          >
+          on upcoming events
+        </p>
+        <p>
+          <a href="https://www.yelp.com/search?find_desc=local+businesses&find_loc=San+Francisco%2C+CA"
+            >More</a
+          >
+          on local businesses in the Bay
+        </p>
+      </section>
+      <div>
+        <section class="social-links">
+          <a href="https://www.instagram.com">
+            <img
+              src="images/social/instagram/instagram-icon-1.png"
+              alt="Instagram Image"
+            />
+          </a>
+          <a href="https://www.twitter.com">
+            <img
+              src="images/social/twitter/twitter-icon.png"
+              alt="Twitter Image"
+            />
+          </a>
+          <a href="https://www.facebook.com">
+            <img
+              src="images/social/facebook/facebook-icon.png"
+              alt="Facebook Image"
+            />
+          </a>
+        </section>
+        <section class="contact-info">
+          <p>235 Montgomery Street Suite 760</p>
+          <p>San Francisco, CA 94104</p>
+          <p>Phone: <strong>415.392.4520</strong></p>
+          <p>Email: <strong>info@baychamber.com</strong></p>
+          <p>Last modified: <span id="last-mod"></span></p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

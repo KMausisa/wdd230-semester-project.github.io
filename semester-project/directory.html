@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page act as a directory, displaying seven local businesses in the Bay Area"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon_io/favicon-32x32.png"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <!-- Load Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script type="module" src="js/responsive-navigation.js"></script>
+    <script src="js/directory.js" defer></script>
+    <script src="js/list-to-grid.js" defer></script>
+    <script src="js/last-modified.js" defer></script>
+
+    <title>Directory | Bay Chamber</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <img
+            srcset="
+              images/favicon/favicon_io/favicon-32x32.png        16w,
+              images/favicon/favicon_io/android-chrome-96x96.png 96w
+            "
+            sizes="(max-width: 400px) 96px, 
+                          32px"
+            src="images/favicon/favicon_io/favicon-16x16.png"
+            alt="Site Logo"
+          />
+        </li>
+        <li><a class="menu-button" href="#">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a class="active" href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <figure class="container">
+        <picture>
+          <source
+            media="(max-width: 400px)"
+            srcset="images/directory/banner/directory-banner-image-650x864.png"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="images/directory/banner/directory-banner-image-1536x725.png"
+          />
+          <img
+            src="images/directory/banner/directory-banner-image-1536x725.png"
+            alt="Banner Image"
+          />
+        </picture>
+        <div class="top-left">
+          <h1>Bay Chamber</h1>
+          <section class="call-to-action">
+            <h2>Directory</h2>
+          </section>
+        </div>
+      </figure>
+    </header>
+    <main id="direct">
+      <section class="directory">
+        <div class="filter-buttons">
+          <div class="list-view-button">
+            <i class="fa fa-bars" aria-hidden="true"></i> List view
+          </div>
+          <div class="grid-view-button">
+            <i class="fa fa-th-large" aria-hidden="true"></i> Grid view
+          </div>
+        </div>
+
+        <ol class="list list-view-filter">
+          <li>
+            <span>
+              <img id="logo1" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name1">
+              <a id="website1" href="#"></a>
+            </span>
+            <div id="phone1">Phone: </div>
+            <div id="location1">Locations: </div>
+          </li>
+          <li>
+            <span>
+              <img id="logo2" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name2">
+              <a id="website2" href="#"></a>
+            </span>
+            <div id="phone2">Phone: </div>
+            <div id="location2">Locations: </div>
+          </li>
+          <li>
+            <span>
+              <img id="logo3" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name3">
+              <a id="website3" href="#"></a>
+            </span>
+            <div id="phone3">Phone: </div>
+            <div id="location3">Location: </div>
+          </li>
+          <li>
+            <span>
+              <img id="logo4" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name4">
+              <a id="website4" href="#"></a>
+            </span>
+            <div id="phone4">Phone: </div>
+            <div id="location4">Location: </div>
+          </li>
+          <li>
+            <span>
+              <img id="logo5" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name5">
+              <a id="website5" href="#"></a>
+            </span>
+            <div id="phone5">Phone: </div>
+            <div id="location5">Location: </div>
+          </li>
+          <li>
+            <span>
+              <img id="logo6" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name6">
+              <a id="website6" href="#"></a>
+            </span>
+            <div id="phone6">Phone: </div>
+            <div id="location6">Location: </div>
+          </li>
+          <li>
+            <span>
+              <img id="logo7" src="#" alt="Logo Image">
+            </span>
+            <span class="name" id="name7">
+              <a id="website7" href="#"></a>
+            </span>
+            <div id="phone7">Phone: </div>
+            <div id="location7">Locations: </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <section class="attribution">
+        <img src="images/favicon/favicon_io/android-chrome-96x96.png" alt="">
+        <h2>Bay Chamber</h2>
+      </section>
+      <div>
+        <section class="social-links">
+          <a href="https://www.instagram.com">
+            <img
+              src="images/social/instagram/instagram-icon-1.png"
+              alt="Instagram Image"
+            />
+          </a>
+          <a href="https://www.twitter.com">
+            <img
+              src="images/social/twitter/twitter-icon.png"
+              alt="Twitter Image"
+            />
+          </a>
+          <a href="https://www.facebook.com">
+            <img
+              src="images/social/facebook/facebook-icon.png"
+              alt="Facebook Image"
+            />
+          </a>
+        </section>
+        <section class="contact-info">
+          <p>235 Montgomery Street Suite 760</p>
+          <p>San Francisco, CA 94104</p>
+          <p>Phone: <strong>415.392.4520</strong></p>
+          <p>Email: <strong>info@baychamber.com</strong></p>
+          <p>Last modified: <span id="last-mod"></span></p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
